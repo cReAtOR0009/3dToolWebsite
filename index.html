@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>3D Product Website</title>
+  <meta name="description" content="Threejs 3D demo website using WEBGi">
+
+  <meta property="og:url" content="https://creator-3dproduct.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Threejs demo landing page for product visualization using WEBGi">
+  <meta property="og:description" content="Threejs demo landing page for product visualization using WEBGi">
+  <meta property="og:image" content="http://drill-webgi-tutorial.vercel.app/assets/images/preview.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="creator-3dproduct.netlify.app">
+  <meta property="twitter:url" content="http://creator-3dproduct.netlify.app">
+  <meta name="twitter:title" content="Threejs demo landing page for product visualization using WEBGi">
+  <meta name="twitter:description" content="Threejs demo landing page for product visualization using WEBGi">
+  <meta name="twitter:image" content="http://drill-webgi-tutorial.vercel.app/assets/images/preview.jpg">
+
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="https://5f-creator.netlify.app/">
+
+  <meta charset="UTF-8" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicons/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#F2CE6E">
+  <meta name="theme-color" content="#F2CE6E">
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="loader">
+    <p>Loading... Please wait</p>
+    <div class="progress"></div>
+  </div>
+  <nav class="nav--bar">
+    <img class="logo" src="assets/images/logo.svg">
+    <button class="button--navbar">BUY NOW</button>
+  </nav>
+
+  <div class="container">
+    <section class="section first">
+      <div class="section--one--container">
+        <h1>Super Drill</h1>
+        <p>Achieve precise fingertip control across all drilling tasks with variable speed functionality. Experience full torque and power in both forward and reverse thanks to the reverse brush system. Keep operations seamless with the lock-on button for continuous use, ensuring efficiency and ease of use.</p>
+        <button class="button--hero">KNOW MORE</button>
+      </div>
+    </section>
+
+    <section class="section second">
+      <div class="section--two--container">
+        <h2>Enhanced Comfort</h2>
+        <p>Experience ergonomic excellence with our reversible hammer drill. Designed with optimal grip positions, a lightweight build, and an insulated shock-proof plastic body, it ensures comfortable handling during prolonged use. Changing bits is a breeze, further enhancing convenience and efficiency.</p>
+      </div>
+      <div class="custom--bg"></div>
+    </section>
+
+    <section class="section third">
+      <div class="section--third--container">
+		<h2>Versatile Drilling</h2>
+		<p>Capable of drilling through wood, metal, and plastic surfaces, our product offers versatility for various projects. Please note that metal drill bits are not included in the product components but can be easily procured by the customer for drilling into metal surfaces.</p>
+		<button class="button--customize">CUSTOMIZE</button>
+      </div>
+    </section>
+
+    <footer>
+      <button class="button--footer">BACK TO TOP</button>
+    </footer>
+  </div>
+
+  <div id="webgi-canvas-container">
+    <canvas id="webgi-canvas"></canvas>
+    <button class="button--customize button--exit">EXIT</button>
+  </div>
+
+  <div class="customizer--container">
+    <ul class="strap--colors">
+      <li class="button--colors yellow"></li>
+      <li class="button--colors red"></li>
+      <li class="button--colors black"></li>
+    </ul>
+  </div>
+
+  <script src="src/index.ts"></script>
+
+</body>
+
+</html>
